@@ -11,7 +11,6 @@ CSV_PATH = _DATA_DIR / "cleaned" / "transactions_cleaned.csv"
 def feature_columns(df):
     return (
         ["Transaction Type", "Day of Week", "Month", "Amount_scaled"]
-        + [c for c in df.columns if c.startswith("Desc_")]
         + [c for c in df.columns if c.startswith("Acct_")]
     )
 
