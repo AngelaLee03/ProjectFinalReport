@@ -21,7 +21,7 @@ def load_xy(csv_path):
     df = pd.read_csv(path)
     cols = feature_columns(df)
     X = df[cols]
-    y = df["Category_label"]
+    y = df["Category_Label"]
     return X, y, cols
 
 
